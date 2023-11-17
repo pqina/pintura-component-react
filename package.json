@@ -1,5 +1,5 @@
 {
-    "version": "9.0.1",
+    "version": "9.0.2",
     "name": "@pqina/react-pintura",
     "description": "Pintura Image Editor Components for use with React",
     "author": "Rik Schennink at PQINA",
@@ -7,6 +7,7 @@
     "license": "https://pqina.nl/pintura/license/",
     "browser": "index.js",
     "main": "index.js",
+    "module": "index.js",
     "types": "react-pintura.d.ts",
     "peerDependencies": {
         "@pqina/pintura": "^8.x"
