@@ -48,6 +48,9 @@ declare module '@pqina/react-pintura' {
         onSelectstyle?: (detail: { [key: string]: unknown }) => void;
         onSelectutil?: (detail: string) => void;
         onSelectcontrol?: (detail: string) => void;
+        onSelectiondown?: (detail: string) => void;
+        onSelectionup?: (detail: string) => void;
+        onSelectionchange?: (detail: string) => void;
     }
 
     interface PinturaComponentModalEvents extends PinturaComponentEvents {
