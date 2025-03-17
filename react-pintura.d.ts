@@ -11,6 +11,7 @@ declare module '@pqina/react-pintura' {
         PinturaEditorModal as PinturaEditorModalInstance,
         Shape,
         Vector,
+        SelectionShapes,
     } from '@pqina/pintura';
 
     import * as React from 'react';
@@ -48,9 +49,9 @@ declare module '@pqina/react-pintura' {
         onSelectstyle?: (detail: { [key: string]: unknown }) => void;
         onSelectutil?: (detail: string) => void;
         onSelectcontrol?: (detail: string) => void;
-        onSelectiondown?: (detail: string) => void;
-        onSelectionup?: (detail: string) => void;
-        onSelectionchange?: (detail: string) => void;
+        onSelectiondown?: (detail: SelectionShapes[]) => void;
+        onSelectionup?: (detail: SelectionShapes[]) => void;
+        onSelectionchange?: (detail: SelectionShapes[]) => void;
     }
 
     interface PinturaComponentModalEvents extends PinturaComponentEvents {
